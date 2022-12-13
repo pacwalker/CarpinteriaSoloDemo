@@ -1,0 +1,40 @@
+  <!--Cover image -->
+  <div
+  id="intro"
+  class="bg-image"
+  style="
+    background-image: url('assets/images/img1.jpg');"
+    >
+  <div class="mask text-white h-100"> <!--Text color white-->
+    <div class="container d-flex align-items-center" style="padding-top: 50vh"><!--Titles container-->
+      <div class="text-center mx-auto" style="background-color: rgba(0, 0, 0, 0.5)"><!--Mask color-->
+        <h1 class="text1"><!--Title-->
+          Tienda
+        </h1><!--Title-->
+      </div><!--Mask color-->
+    </div><!--Titles container-->
+  </div><!--Text color white-->
+</div> <!--Cover image-->
+
+<br>
+
+<main class="container">
+    <div class="card-columns">
+        <div class="card shadow-sm border-0" *ngFor="let product of products$ | async">
+            <img class="card-img-top" [src]="product.image" [alt]="product.name">
+            <div class="card-body">
+                <span class="category text-muted">{{ product.category | uppercase }}</span>
+                <h3 class="card-title">{{ product.name }}</h3>
+                <p class="card-text">{{ product.description }},</p>
+                <div class="d-flex justify-content-between align-content-center">
+                    <span class="font-weight-bold">{{ product.price | currency }}</span>
+                    <!-- REQUIRED: Snipcart buy button needs the class '.snipcart-add-item' & product attributes -->
+                    <button class="btn btn-dark snipcart-add-item" [attr.data-item-id]="product.id" [attr.data-item-price]="product.price" [attr.data-item-url]="product.url" [attr.data-item-description]="product.description" [attr.data-item-image]="product.image" [attr.data-item-name]="product.name"
+                        [attr.data-item-categories]="product.category">
+                        <i class="fas fa-cart-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

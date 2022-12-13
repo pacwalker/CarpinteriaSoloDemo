@@ -1,0 +1,37 @@
+[{
+        "category": "Muebles de baño",
+        "description": "Mueble con una puerta y dos compartimientos laterales",
+        "id": "P001",
+        "image": "assets/images/catalogo greg.jpg",
+        "name": "Mueble Greg",
+        "price": 1000,
+        "url": "https://YOUR-FIREBASE-PROJECT.firebaseio.com/products.json"
+    },
+    {
+        "category": "Muebles de baño",
+        "description": "Mueble con una puerta y un compartimiento en la parte inferior",
+        "id": "P002",
+        "image": "assets/images/catalogo mini.jpg",
+        "name": "Mueble Mini",
+        "price": 1000,
+        "url": "https://YOUR-FIREBASE-PROJECT.firebaseio.com/products.json"
+    },
+    {
+        "category": "Muebles de baño",
+        "description": "Mueble con dos puertas y un cajon en la parte de abajo",
+        "id": "P003",
+        "image": "assets/images/catalogo nano.jpg",
+        "name": "Mueble Nano",
+        "price": 1000,
+        "url": "https://YOUR-FIREBASE-PROJECT.firebaseio.com/products.json"
+    },
+    {
+        "category": "Muebles de baño",
+        "description": "Mueble con una puerta y 4 cajones alrededor",
+        "id": "P004",
+        "image": "assets/images/catalogo reni.jpg",
+        "name": "Mueble Reni",
+        "price": 1000,
+        "url": "https://YOUR-FIREBASE-PROJECT.firebaseio.com/products.json"
+    }
+]

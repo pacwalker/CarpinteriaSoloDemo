@@ -1,0 +1,59 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="assets/images/logo blanco 2.png" width="80" height="80"></a><!--Logo-->
+      <!--Collapse button (only works if the screen isn't big enough to fit all components)-->
+      <button #collapseButton class="navbar-toggler" type="button"  data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed">
+        <span class="navbar-toggler-icon"></span>
+      </button><!--Collapse button-->
+      <!--Elements inside the collapse button-->
+      <div class="collapse navbar-collapse no-transition" id="navbarNavDropdown" [attr.aria-expanded]="!isCollapsed" [ngClass]="{collapse: !isCollapsed}">
+        <ul class="navbar-nav ms-auto mb-2 my-lg-0" (click)="isCollapsed = !isCollapsed">
+          <!--Language change buttons-->
+          <!--<nav class="nav-item">
+            <form class="container-sm">
+              --English--
+              <button class="btn me-2" type="button">
+                <img src="assets/images/icons/english.png" width="30" height="30">
+              </button>
+              --Spanish--
+              <button class="btn me-2" type="button">
+                <img src="assets/images/icons/spanish.jpg" width="30" height="30">
+              </button>
+            </form>
+          </nav>-->
+          <!--links-->
+          <!--Inicio-->
+          <li class="nav-item">
+              <a class="nav-link active text-warning" aria-current="page" routerLink="/inicio">Inicio</a>
+          </li><!--Inicio-->
+          <!--Nosotros-->
+          <li class="nav-item">
+            <a class="nav-link text-warning" routerLink="/nosotros">Nosotros</a>
+          </li><!--Nosotros-->
+          <!--Nuestro trabajo-->
+          <li class="nav-item">
+            <a class="nav-link text-warning" routerLink="/trabajo">Nuestro trabajo</a>
+          </li><!--Nuestro trabajo-->
+          <!--Contactanos-->
+          <li class="nav-item">
+            <a class="nav-link text-warning" routerLink="/contactanos">Contactanos</a>
+          </li><!--Contactanos-->
+          <!--Tienda-->
+          <!-- <li class="nav-item">
+            <a class="nav-link text-warning" routerLink="/tienda" href="#">Tienda</a>
+          </li> --> <!--Tienda--> 
+          <!-- <li>
+            <button class="btn  snipcart-checkout">
+              <img src="assets/images/icons/shoppingcart.png" width="30" height="30">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </li> -->
+      </ul>
+    </div><!--Elements inside the collapse button-->
+  </div>
+</nav>
+
+  <!-- Navbar -->
+
+  

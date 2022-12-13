@@ -1,0 +1,26 @@
+.rounded-circle{
+    height: 40vh;
+    width: 40vh;
+    overflow:hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .rounded-circle img{
+    height: 100%;
+    max-height: var(--max);
+    width: 100%;
+    max-width: var(--max);
+    object-fit: cover;
+  }
+
+  #feature{
+    display: block; 
+    margin-left:auto; 
+    margin-right:auto;
+    padding-top: 5vh;
+  }
+
+  #featicon{
+    float:left;
+  }

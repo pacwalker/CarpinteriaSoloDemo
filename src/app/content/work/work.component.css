@@ -1,0 +1,14 @@
+.img-container{
+    height: 250px;
+    max-width: 250px;
+    overflow:hidden;
+    margin-left: auto; 
+    margin-right: auto;
+  }
+  .img-container img{
+    height: 100%;
+    max-height: var(--max);
+    width: 100%;
+    max-width: var(--max);
+    object-fit: cover;
+  }
